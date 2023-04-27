@@ -87,5 +87,5 @@ abstract class MathAbstract
         $this->saveResult($result, $row);
     }
 
-    abstract protected function math(array $row): int;
+    abstract protected function math(array $row);
 }

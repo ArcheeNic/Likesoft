@@ -20,9 +20,9 @@ class MathDivision extends MathAbstract
         $this->saveResult($result, $line);
     }
 
-    protected function math(array $row): int
+    protected function math(array $row): float
     {
-        return $row[0] / $row[1];
+        return round($row[0] / $row[1], 2);
     }
 
     private function errorNotAllowed($line): void
