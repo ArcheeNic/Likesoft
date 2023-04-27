@@ -22,7 +22,7 @@ class MathDivision extends MathAbstract
 
     protected function math(array $row): float
     {
-        return round($row[0] / $row[1], 2);
+        return $row[0] / $row[1];
     }
 
     private function errorNotAllowed($line): void
