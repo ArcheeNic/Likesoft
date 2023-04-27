@@ -4,8 +4,8 @@ use ArcheeNic\Likesoft\Logger;
 
 require_once('loader.php');
 
-unlink(__DIR__ . '/log.txt');
 $logger = new Logger(__DIR__ . '/log.txt');
+$logger->clear();
 
 try {
     (new Console($logger))->execute(__DIR__);
